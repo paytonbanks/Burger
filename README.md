@@ -1,9 +1,6 @@
 # BURGER TIME
 Burger Time is a web based application routed with Node Express, database supported by MySql and the HTML is serviced by Handlebars. 
 
-Node Express Appp mysql 
-HandleBars services the Html page
-
 single page like app, all on one page
 
 ## Technology
