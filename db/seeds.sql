@@ -1,9 +1,9 @@
 USE burger_db;
 
-INSERT INTO burgers (burger_name) VALUES ('Avacado Sour Cream');
-INSERT INTO burgers (burger_name) VALUES ('Double Bacon Cheddar');
-INSERT INTO burgers (burger_name) VALUES ('Chili & Jalapeno');
-INSERT INTO burgers (burger_name) VALUES ('Double Bacon Cheese', true);
-INSERT INTO burgers (burger_name) VALUES ('Double Bacon', true);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Avacado Sour Cream', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Double Bacon Cheddar', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Chili & Jalapeno', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Double Bacon Cheese', true);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Double Bacon', true);
 
 

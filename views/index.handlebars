@@ -1,0 +1,55 @@
+<div>
+        {{#each burgers}}
+          {{#unless devoured}}
+            <form action="burgers/eaten/{{id}}" method="POST">
+              <div class="input-group">
+                <li class="form-control">{{id}}: {{burger_name}}</li>
+                  <span class="input-group-btn">
+                    <button class="btn btn-danger devour-btn" type="submit">Eat me!</button>
+                  </span>
+              </div>
+            </form>
+          {{/unless}}
+        {{/each}}
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h3 class="submitFont">Burgers Gulped Down:</h3>
+      <div>
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <div class="input-group">
+              <li class="form-control">{{this.id}}: {{this.burger_name}}</li>
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  <div class="col-md-2"></div>
+</div>
+<center>
+  <h2>Add A New Burger</h2>
+</center>
+<form action="/burgers/create" method="POST">
+  <div class="row">
+    <div class="col-md-4"></div>
+      <div class="form-group col-md-4">
+        <center>
+          <label for="/burgers/create" class="submitFont">Burger Name:</label>
+        </center>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
