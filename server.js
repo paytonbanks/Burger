@@ -1,25 +1,26 @@
-var express = require("express");
-var exphbs = require("express-handlebars");
-var routes = require("./controllers/burgers_controller.js");
+const express = require('express');
+var exphbs = require('express-handlebars');
+// cont mysql = require('mysql');
+var routes = require('./controllers/burgers_controller.js');
 
-var PORT = process.env.PORT || 8080;
-var app = express();
 
-// Static Content | Public Directory \\
-app.use(express.static("public"));
+const app = express();
+var PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Handlebars \\
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
+app.use(express.static("public"));
 
-// enRoute Server connection \\
+app.get('/', (req, res) => {
+    res.render('index', {layout:'main'});
+});
 app.use(routes);
 
-app.listen(PORT, function() {
-    console.log("Burger Seerver Ready!: http://localhost:" + PORT);
+app.listen(PORT, () => {
+    console.log('Burger Server Ready!: http://localhost:' + PORT);
 });    
 
 
