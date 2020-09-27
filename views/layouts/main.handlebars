@@ -3,17 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MVC Burger</title>
-    <link rel="stylesheet" 
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
-            crossorigin="anonymous">
+    <title>Burger Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src=""></script>
-</head>
     
-    <body>
-        {{{ body }}}
-        
-    </body>
+
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="http://pfuserfiles.globiflow.com/1196477371-40877-cow.png" class="icon" width="50" height="50" class="d-inline-block align-top">
+        </a>
+    </nav>
+    <div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center enter_section">
+			<form action="burgers/create" method="POST">
+				<input type="text" class="form-control" name="burger_name" value="" id="enter_text">
+				<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+			</form>
+			<p>Enter a burger you want to eat Click the "Submit" button.</p>
+		</div>
+	</div>
+</div>
+
+        <div class="mx-auto">  
+            <div class="row">
+                <div class="d-flex m-5 flex-col">
+                    <div class="card burgersReady">
+                        <div class="card-body">
+                            <h5 class="card-title">BURGERS READY</h5>
+                                <p class="card-text"> {{{ body }}}</p>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="marbg"><marquee class="juicy" behavior="scroll" direction="left" scrollamount="12">JUICY</marquee></div>     
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+
 </html>
