@@ -1,27 +1,26 @@
-var connection = require("./connection");
+var connection = require("./connection.js");
 
 var orm = {
-    all: function(cb) {
-        connection.query('SELECT * FROM ??', [burgers], function(err, result) {
+    selectAll: function(cb) {
+        connection.query("SELECT * FROM burgers", function(err, res) {
             if (err) throw err;
-            console.log(burgers);
             cb(res);
         });
     },
 
-    create: function(name, cb) {
-        connection.query('INSERT INTO burgers SET ?', {
+    insertOne: function(name, cb) {
+        connection.query("INSERT INTO burgers SET ?", {
             burger_name: name,
             devoured: false
         },
-            function (err, res) {    
-                if (err) throw err;
-                cb(res);
-            });
+        function (err, res) {    
+            if (err) throw err;
+            cb(res);
+        });
     },
 
-    update: function(newId, cb) {
-        connection.query('UPDATE burgers SET ? WHERE ?', [req.body.burgers], 
+    updateOne: function(newID, cb) {
+        connection.query("UPDATE burgers SET ? WHERE ?", [{ devoured: true }, { id: newID }],
         function(err, res) {
             if (err) throw err;
             cb(res);

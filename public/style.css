@@ -1,7 +1,16 @@
+/* .jumbotron {
+    max-width: I I 800px;
+    border-width: 2px;
+    border-color: red;
+    margin-top: 25%;
+    z-index: 4;
+}
+
 .bgrPanel {
-    width: 900px;
+    width: 750px;
     text-align: center;
 }
+
 
 .burgersReady {
     background-color: lightblue;
@@ -15,7 +24,9 @@
 .navbar{
     opacity: 0.9 ;
     z-index: 1;
-    align-content: space-around
+    align-content: center;
+
+    
 }
 .icon {
     color: white !important;
@@ -24,14 +35,14 @@
 }
 
 
-/* .ready {
+.ready {
     color: green;
     z-index: 4;
 }
 
 .devoured {
     color:blue;
-} */
+}
 
 
 body {
@@ -39,11 +50,12 @@ body {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
 }
+
 .marbg {
     width: 100%;
     color: gray;
@@ -52,7 +64,7 @@ body {
     text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* overflow-wrap: unset; */
-    z-index: -2;
+    /* z-index: -2;
     opacity: 0.4;
     position: absolute;
 
@@ -119,4 +131,4 @@ div.container-fluid img {
     height: 100px;
     width: 150px;
     position: absolute;
-} */
+/* } */ 
