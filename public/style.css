@@ -1,50 +1,3 @@
-/* .jumbotron {
-    max-width: I I 800px;
-    border-width: 2px;
-    border-color: red;
-    margin-top: 25%;
-    z-index: 4;
-}
-
-.bgrPanel {
-    width: 750px;
-    text-align: center;
-}
-
-
-.burgersReady {
-    background-color: lightblue;
-    color:black;
-    margin-top: 75px;
-    margin-left: 50px;
-    width: 250px;
-    align-content: center;
-}
-
-.navbar{
-    opacity: 0.9 ;
-    z-index: 1;
-    align-content: center;
-
-    
-}
-.icon {
-    color: white !important;
-    z-index: 3;
-    vertical-align: middle;
-}
-
-
-.ready {
-    color: green;
-    z-index: 4;
-}
-
-.devoured {
-    color:blue;
-}
-
-
 body {
     background-image: url("http://pfuserfiles.globiflow.com/1196438966-5705-burger15532871920.jpg");
     height: 100%;
@@ -56,6 +9,33 @@ body {
     padding: 0;
 }
 
+.jumbotron {
+    background-color: transparent;
+    max-width: 700x;
+    border-width: 2px;
+    margin-top: 10px;
+    z-index: 4;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.burgerTitles {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.navbar{
+    opacity: 0.9 ;
+    z-index: 1;
+    align-content: center;   
+}
+
+.icon {
+    color: white !important;
+    z-index: 3;
+    vertical-align: middle;
+}
+
 .marbg {
     width: 100%;
     color: gray;
@@ -63,12 +43,11 @@ body {
     font-weight: 800;
     text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* overflow-wrap: unset; */
-    /* z-index: -2;
+    overflow-wrap: unset;
+    z-index: -2;
     opacity: 0.4;
     position: absolute;
-
-}           
+}
 
 .nom {
     word-spacing: 100px; 
@@ -81,32 +60,22 @@ body {
     line-height: 200px;
     z-index: -1;
     opacity: 1;
-
 }
-
 
 marquee {
     padding-bottom: 10px;;
     text-transform: capitalize;
-    
     color: gray;
     font-size: larger;
 }
 
 .faster .fastest {
 
-            line-height: 10px;
-            opacity: 0.5;
-            font-family: 'Lucida Sans Regular';
-            text-transform: uppercase;
-
-
-
-        }
-
-
-
-
+    line-height: 10px;
+    opacity: 0.5;
+    font-family: 'Lucida Sans Regular';
+    text-transform: uppercase;
+}
 
 .fast {
     color: white;
@@ -116,19 +85,8 @@ marquee {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     z-index: -3;
     padding-top: 100px;
-    
-
 }
 
 div.container-fluid img {
     position: relative; top: 0; left: 0; z-index: -1;
 }
-
-.menu {
-    color: black;
-    font-size: 24px;
-    background-color: ivory;
-    height: 100px;
-    width: 150px;
-    position: absolute;
-/* } */ 

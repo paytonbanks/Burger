@@ -1,78 +1,56 @@
-<div class="jumbotron">
-  <div class="row">
-    <div class="col-md-2"></div>
-      <div class="col-md-4">
-        <h3 class="order">Burgers Ready</h3>
-        <div>
-          {{#each burgers}}
-            {{#unless devoured}}
-              <form action="burgers/eaten/{{id}}" method="POST">
-                <div class="input-group">
-                  <li class="form-control">{{id}}: {{burger_name}}</li>
-                    <span class="input-group-btn">
-                      <button class="btn btn-danger devour-btn" type="submit">Devored Eaten</button>
-                    </span>
-                </div>
-              </form>
-            {{/unless}}
-          {{/each}}
-        </div>
-      </div>
-      <div class="col-md-4">
-        <h3 class="order">All Burgers Devoured</h3>
-        <div>
-          {{#each burgers}}
-            {{#if this.devoured}}
-              <div class="input-group">
-                <li class="form-control">{{this.id}}: {{this.burger_name}}</li>
-              </div>
-            {{/if}}
-          {{/each}}
-        </div>
-      </div>
-    <div class="col-md-2"></div>
-  </div>
-  <center>
-    <h2>Add A New Burger</h2>
-  </center>
-  <form action="/burgers/create" method="POST">
+<div class="jumbotron burger">
     <div class="row">
-      <div class="col-md-4"></div>
-        <div class="form-group col-md-4">
-          <center>
-            <label for="/burgers/create" class="burgerCreate">Burger Name:</label>
-          </center>
-          <textarea class="form-control" type="text" columns="6" rows="2" id="burgers/create" name="burger_name"></textarea>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <h3 class="burgerTitles">Burgers Ready!</h3>
+            <div>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <form action="/burgers/devoured/{{id}}" method="POST">
+                    <div class="input-group">
+                        <li class="form-control">{{id}}: {{burger_name}}</li>
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger devour-btn" type="submit">Devoured!</button>
+                        </span>
+                    </div>
+                </form>
+                {{/unless}}
+                {{/each}}
+            </div>
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h3 class="burgerTitles">Burgers Devoured!</h3>
+            <div>
+                {{#each burgers}}
+                {{#if this.devoured}}
+                <div class="input-group">
+                    <li class="form-control">{{this.id}}: {{this.burger_name}}</li>
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+        <div class="col-md-2"></div>
     </div>
-    <div>
-      <div>
-        <button type="submit" class="btn btn-success">Build a new Buger</button>
-      </div>
-    </div>
-  </form>
-        
-
-
-
-
-
-  
-  
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <center>
+        <h3 class="burgerTitles">Build Your Burger!</h3>
+    </center>
+    <form action="/burgers/create" method="POST">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="form col-md-4">
+                <center>
+                    <label for="/burgers/create" class="burgerTitles">Burger Name:</label>
+                </center>
+                <textarea class="form-control" type="text" columns="6" rows="2" id="burgers/create"
+                    name="burger_name"></textarea>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div>
+            <div>
+                <button type="submit" class="button btn-success">Place Your Order</button>
+            </div>
+        </div>
+    </form>
+</div>    

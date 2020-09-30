@@ -2,12 +2,12 @@ var orm = require("../config/orm.js");
 
 var burger = {
   selectAll: function(cb) {
-    orm.all(function(res) {
+    orm.selectAll(function(res) {
       cb(res);
     });
   },
 
-  inesrtOne: function(name, cb) {
+  insertOne: function(name, cb) {
     orm.insertOne(name, function(res) {
       cb(res);
     });
@@ -17,7 +17,7 @@ var burger = {
     orm.updateOne(newID, function(res) {
       cb(res);
     });
-  }
+  },
 
 };
 

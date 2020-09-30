@@ -1,12 +1,15 @@
 # BURGER TIME
-Burger Time is a web based application routed with Node Express, database supported by MySql and the HTML is serviced by Handlebars. 
+Devour Burger(DB) is a single-page web application that was built using a Model View Control(MVC) design pattern. Model View Controller divdes the program logic into the three interconnected elements: Model data manipulation, View or user interface, and Controller that works as the dispatcher for the full system design.
+The application is supported and deployed with Node Express, MySql, Handlebars and Heroku.
 
-single page like app, all on one page
+![](images/db.png)
+
+## Description
+The is presented with a fully functioning single-page application that allows the user to 'input' a burger of thier choosing. The newly created burger is then populated on the left side with a 'Devour' button position on the right side. When the user presses the button, the burgern then populates on the right side of the create bar under the devoured category.
 
 ## Technology
 * [Node.js](https://nodejs.org/en/)
 * [npmjs](https://docs.npmjs.com/)
-* [Jest](https://jestjs.io/docs/en/getting-started)
 * [Inquirer](https://www.npmjs.com/package/inquirer)
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -21,4 +24,4 @@ single page like app, all on one page
 
 ## Client Project Site
 *link:*
-[Teamgenerator](https://shielded-refuge-45840.herokuapp.com/)
+[Devour Burger](https://guarded-falls-39688.herokuapp.com/)
